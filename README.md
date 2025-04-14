@@ -226,6 +226,9 @@ sudo systemctl start drosera
 journalctl -u drosera.service -f
 ```
 
+![image](https://github.com/user-attachments/assets/a4ad6e66-4749-4780-9347-c878399d4067)
+
+
 ### Optional commands
 ```console
 # Stop node
@@ -241,4 +244,8 @@ In the dashboard., Click on `Opti in` to connect your operator to the Trap
 ![image](https://github.com/user-attachments/assets/5189b5cb-cb46-4d10-938a-33f71951dfc2)
 
 
+## Check Node Liveness
+Your node will start producing greeen blocks in the dashboard
+
+![image](https://github.com/user-attachments/assets/9ad08265-0ea4-49f7-85e5-316677245254)
 
