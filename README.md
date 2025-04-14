@@ -262,6 +262,8 @@ journalctl -u drosera.service -f
 
 ![image](https://github.com/user-attachments/assets/a4ad6e66-4749-4780-9347-c878399d4067)
 
+**!! No problem if you are receiveing `WARN drosera_services::network::service: Failed to gossip message: InsufficientPeers`**
+
 ---
 
 ### Optional commands
