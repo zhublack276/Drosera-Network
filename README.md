@@ -135,7 +135,7 @@ drosera dryrun
 
 <h1 align="center">Operator Setup</h1>
 
-## 1. Whitelist Operator
+## 1. Whitelist Your Operator
 **1- Edit Trap configuration:**
 ```bash
 cd my-drosera-trap
