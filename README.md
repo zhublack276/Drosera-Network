@@ -177,7 +177,7 @@ Test the CLI with `./drosera-operator --version` to verify it's working.
 # Check version
 ./drosera-operator --version
 
-# (Optional) Move path to run it globally
+# Move path to run it globally
 sudo cp drosera-operator /usr/bin
 
 # Check if it is working
