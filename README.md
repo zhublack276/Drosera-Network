@@ -154,8 +154,11 @@ Test the CLI with `./drosera-operator --version` to verify it's working.
 # Check version
 ./drosera-operator --version
 
-# (Optional) Move path
+# (Optional) Move path to run it globally
 sudo cp drosera-operator /usr/bin
+
+# Check if it is working
+drosera-operator
 ```
 
 ## Install Docker image
@@ -207,3 +210,35 @@ sudo ufw enable
 sudo ufw allow 31313/tcp
 sudo ufw allow 31314/tcp
 ```
+
+## Run Operator
+```console
+# reload systemd
+sudo systemctl daemon-reload
+sudo systemctl enable drosera
+
+# start systemd
+sudo systemctl start drosera
+```
+
+## Check Node Health
+```
+journalctl -u drosera.service -f
+```
+
+### Optional commands
+```console
+# Stop node
+sudo systemctl stop drosera
+
+# Restart node
+sudo systemctl restart drosera
+```
+
+## Opt-in Trap
+In the dashboard., Click on `Opti in` to connect your operator to the Trap
+
+![image](https://github.com/user-attachments/assets/5189b5cb-cb46-4d10-938a-33f71951dfc2)
+
+
+
