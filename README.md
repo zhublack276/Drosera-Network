@@ -166,7 +166,10 @@ Your Trap should be private now with your operator address whitelisted internall
 cd ~
 ```
 ```bash
+# Download
 curl -LO https://github.com/drosera-network/releases/releases/download/v1.16.2/drosera-operator-v1.16.2-x86_64-unknown-linux-gnu.tar.gz
+
+# Install
 tar -xvf drosera-operator-v1.0.2-x86_64-unknown-linux-gnu.tar.gz
 ```
 Test the CLI with `./drosera-operator --version` to verify it's working.
