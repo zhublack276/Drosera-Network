@@ -93,6 +93,7 @@ forge init -t drosera-network/trap-foundry-template
 ```
 **Compile Trap**:
 ```bash
+curl -fsSL https://bun.sh/install | bash
 bun install
 ```
 ```bash
