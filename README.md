@@ -10,6 +10,8 @@ In this Guide, we contribute to Drosera testnet by:
 * 4 GB RAM
 * 20 GB Disk Space
 
+Official [Discord](https://discord.gg/UXAdpTYjgr)
+
 ### Install Dependecies
 ```
 sudo apt-get update && sudo apt-get upgrade -y
