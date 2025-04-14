@@ -201,8 +201,10 @@ drosera-operator register --eth-rpc-url https://ethereum-holesky-rpc.publicnode.
 ---
 
 ## 5. Create Operator systemd
-Enter this command in the terminal, But first replace `PV_KEY` with your `privatekey`
-* You can replace `localhost` with your solid `VPS IP`, if you got Red Blocks in futhur steps.
+Enter this command in the terminal, But first replace:
+* `PV_KEY` with your `privatekey`
+* `VPS_IP` with your solid vps IP (without anything else)
+* if using a `local` system, then replace vps ip with `localhost`
 ```bash
 sudo tee /etc/systemd/system/drosera.service > /dev/null <<EOF
 [Unit]
@@ -220,7 +222,7 @@ ExecStart=$(which drosera-operator) node --db-file-path $HOME/.drosera.db --netw
     --drosera-address 0xea08f7d533C2b9A62F40D5326214f39a8E3A32F8 \
     --eth-private-key PV_KEY \
     --listen-address 0.0.0.0 \
-    --network-external-p2p-address localhost \
+    --network-external-p2p-address VPS_IP \
     --disable-dnr-confirmation true
 
 [Install]
