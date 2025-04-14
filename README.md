@@ -127,7 +127,7 @@ Open your Trap on Dashboard and Click on `Send Bloom Boost` and deposit some `Ho
 
 ---
 
-<h1 align="center">Trap Setup</h1>
+<h1 align="center">Operator Setup</h1>
 
 ## 1. Whitelist Operator
 **1- Edit Trap configuration:**
