@@ -8,7 +8,7 @@
       "version": "latest"
     }
   },
-  "forwardPorts": [8080],
+  "forwardPorts": [3000, 8080],
   "postCreateCommand": "echo Setup complete",
   "postStartCommand": "./.devcontainer/start.sh",
   "customizations": {
