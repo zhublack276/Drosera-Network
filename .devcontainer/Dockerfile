@@ -1,22 +1,28 @@
+# Gunakan base image Ubuntu
 FROM ubuntu:22.04
 
-# Avoid prompts from apt
+# Set non-interaktif supaya tidak ada prompt waktu install
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install basic packages
+# Update dan install dependencies dasar
 RUN apt-get update && apt-get install -y \
-    docker.io \
-    curl \
-    git \
-    sudo \
-    build-essential \
-    vim \
     python3 \
     python3-pip \
-    && apt-get clean
+    build-essential \
+    g++ \
+    curl \
+    git \
+    docker.io \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Create a non-root user (optional)
-ARG USERNAME=devuser
-RUN useradd -m $USERNAME && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+# Tambahkan user non-root jika diperlukan (opsional)
+# RUN useradd -ms /bin/bash devuser
+# USER devuser
 
-USER $USERNAME
+# Atur direktori kerja
+WORKDIR /workspace
+
+# Default command
+CMD [ "bash" ]
+
