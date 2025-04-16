@@ -8,8 +8,9 @@
       "version": "latest"
     }
   },
-  "postCreateCommand": "docker run -d --name my-nginx -p 8080:80 nginx",
   "forwardPorts": [8080],
+  "postCreateCommand": "echo Setup complete",
+  "postStartCommand": "./.devcontainer/start.sh",
   "customizations": {
     "vscode": {
       "extensions": [
