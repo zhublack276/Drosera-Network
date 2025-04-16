@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /workspace
 
-CMD [ "bash" ]
+CMD ["bash"]
