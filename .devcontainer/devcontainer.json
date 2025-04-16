@@ -11,6 +11,15 @@
         "ms-python.python",
         "ms-vscode.cpptools"
       ]
+  "name": "Auto Docker in Codespaces",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "docker run -d --name my-nginx -p 8080:80 nginx",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]
     }
   }
 }
