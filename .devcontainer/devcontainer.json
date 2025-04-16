@@ -1,0 +1,16 @@
+{
+  "name": "Ubuntu Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {},
+  "postCreateCommand": "echo Setup complete",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
