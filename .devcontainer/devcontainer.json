@@ -3,7 +3,11 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "features": {},
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
   "postCreateCommand": "docker run -d --name my-nginx -p 8080:80 nginx",
   "forwardPorts": [8080],
   "customizations": {
